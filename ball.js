@@ -15,12 +15,12 @@ Ball.prototype.update = function (DELTA) {
 
 
 Ball.prototype.draw = function () {
-  Canvas.drawImage(sprites.yellowBall, this.position, BALL_ORIGIN);
+  Canvas.drawImage(sprites.whiteBall, this.position, BALL_ORIGIN);
 };
 
 
 
 Ball.prototype.shoot = function (power, rotation) {
 
-  this.velocity = new Vector2(power * Math.cos(rotation),power * Math.sin(rotation));
+  this.velocity = new Vector2(power * Math.cos(rotation), power * Math.sin(rotation));
 };
